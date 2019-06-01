@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title></title>
+    <url>%2F2019%2F06%2F02%2F%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[函数式编程 简单介绍 函数式接口 函数式接口的定义 在java8中，满足下面任意一个条件的接口都是函数式接口：1、被@FunctionalInterface注释的接口，满足@FunctionalInterface注释的约束。2、没有被@FunctionalInterface注释的接口，但是满足@FunctionalInterface注释的约束。 @FunctionalInterface注释的约束：1、声明一个函数式接口时只能有一个抽象方法(a functional interface has exactly one abstract method)2、在接口中覆写Object类中的public方法，不计入函数式接口的抽象方法数量 结论:只要满足了Functionalnterface注释的约束，它就是一个函数式定义接口，并且官方注释中也提到了说加上标注,则会触发JavaCompiler的检查。对于符合函数接口的接口，加不加都无关紧要，但是加上则会提供一层编译检查的保障。如果不符合，则会报错。所以不管是否在接口上注解上@FunctionInterface都可以，但是编码时建议加上注解最好~ Demo12345678910111213141516171819202122//接口一@FunctionalInterfacepublic interface FunctionInterfaceTest &#123; String getInfo(String input); @Override String toString(); //Object中的方法 @Override boolean equals(Object obj); //Object中的方法 &#125;&#125;//接口二@FunctionalInterfacepublic interface FunctionInterfaceTest &#123; String getInfo(String input);&#125;//接口三public interface FunctionInterfaceTest &#123; String getInfo(String input);&#125; ⭐ 函数式接口实例的创建有三种方式： 1、lambda表达式；2、方法引用；3、构造方法引用 Demo2]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[新的开始]]></title>
+    <url>%2F2019%2F05%2F29%2F%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>文章</category>
+      </categories>
+      <tags>
+        <tag>随谈</tag>
+      </tags>
+  </entry>
+</search>
